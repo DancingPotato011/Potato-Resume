@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Resume</title>
+
+<style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+  background: #2c3e50;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+/* SECTIONS */
+
+.section {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* TEXT */
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h2 {
+  color: #1abc9c;
+}
+
+/* PROFILE IMAGE */
+
+img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+  border: 3px solid #1abc9c;
+}
+
+/* LIST */
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* CONTACT CARD */
+
+.contact-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 80%;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.contact-card h2 {
+  color: #1abc9c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #1abc9c;
+}
+
+button {
+  background: #1abc9c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #16a085;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="#my-info">My Info</a>
+    <a href="#summary">My Summary</a>
+    <a href="#education">Education</a>
+    <a href="#technical-skill">Technical Skill</a>
+    <a href="#project">Project</a>
+    <a href="#get-in-touch">Get In Touch</a>
+  </nav>
+</header>
+
+<!-- MY INFO -->
+
+<section id="my-info" class="section">
+  <h1>Gelwent Ooi Yang Loong</h1>
+  <p style="text-align:center;">Email: gelwent.ooi@gmail.com</p>
+
+  <h2>Profile Photo</h2>
+  <img src="image/WED pic for lab 1.jpeg" alt="My Profile Photo" width="200">
+</section>
+
+<!-- SUMMARY -->
+
+<section id="summary" class="section">
+  <h2>Summary</h2>
+  <p>
+    I am a Computer Engineering diploma student with experience in C++, HTML, cybersecurity,
+    networking, and hardware fundamentals. I enjoy solving technical problems and learning new 
+    technologies. My strengths include creativity, attention to detail, innovation, and a strong 
+    growth mindset. I aim to build a successful career through continuous learning and hands-on projects.
+  </p>
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education" class="section">
+  <h2>PSDC Future Tech</h2>
+  <p><strong>Diploma in Computer Engineering</strong></p>
+  <p>
+    Currently studying core subjects such as computer architecture, microprocessors, 
+    networking, digital electronics, programming fundamentals, and cybersecurity basics.
+  </p>
+</section>
+
+<!-- TECHNICAL SKILLS -->
+
+<section id="technical-skill" class="section">
+  <h2>Technical Skills</h2>
+  <ul>
+    <li>Programming: C++, HTML, CSS</li>
+    <li>Web Development: Basic front-end layout and responsive design</li>
+    <li>Cybersecurity: Threat awareness and security concepts</li>
+    <li>Networking: LAN setup, configuration, troubleshooting</li>
+    <li>Microprocessor & Microcontroller basics</li>
+    <li>Computer Architecture concepts</li>
+    <li>Digital Electronics basics</li>
+    <li>Tools: Code editors, debugging, version control basics</li>
+  </ul>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="project" class="section">
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>Personal Resume Website</strong> – Built using HTML & CSS</li>
+    <li><strong>Networking Lab Setup</strong> – Configured switches, routers, VLANs</li>
+    <li><strong>Microprocessor Mini Project</strong> – Simple control system prototype</li>
+    <li><strong>Cybersecurity Demo</strong> – Security practices and threat analysis</li>
+  </ul>
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section class="section">
+  <h2>Achievements & Competitions</h2>
+  <p><strong>Tech4Good Competition – 3rd Place</strong></p>
+  <p>
+    Worked in a team to develop a tech solution aimed at improving community welfare.
+    Contributed to design, planning, and technical implementation.
+  </p>
+</section>
+
+<section id="get-in-touch" class="contact-card section">
+  <h2>Get In Touch</h2>
+  
+  <form action="#">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Write your message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+</body>
+</html>
